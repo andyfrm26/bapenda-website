@@ -1,0 +1,262 @@
+:root {
+    --blue: #1753A2;
+    --magenta: #CA1C77;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+
+/* Carousel */
+/* .bg-img-1 {
+    background-image: url('/img/hero-1.jpeg');
+}
+.bg-img-2 {
+    background-image: url('/img/hero-2.jpeg');
+}
+.bg-img-3 {
+    background-image: url('/img/hero-3.jpeg');
+}
+
+.carousel-image {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+.carousel-inner {
+    width: 100%;
+    max-height: 85vh;
+    aspect-ratio: 18/6;
+} */
+/* end of Carousel */
+
+.beranda__tentang-kami {
+    /* padding: 100px 50px; */
+}
+
+.beranda__jenis-pajak {
+    background-color: var(--blue);
+}
+
+.beranda__berita-terkini span .tanggal {
+    font-size: 10px;
+}
+
+.beranda__card-berita a:hover {
+    color: #1753A2;
+}
+
+.beranda__footer a {
+    color: var(--blue);
+}
+
+.beranda__footer .links a:hover {
+    color: var(--magenta);
+}
+
+.beranda__footer span {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    content: "";
+    border: 2.5px solid var(--blue);
+    width: 100px;
+    margin-top: 20px;
+}
+
+.beranda__footer-copyright {
+    background-color: var(--blue);
+}
+
+.beranda__footer-socmed svg{
+    transition: all .1s;
+    width: 24px;
+    height: 36px;
+}
+
+.beranda__footer-socmed svg:hover{
+    scale: 120%;
+}
+
+.beranda__footer-socmed .facebook svg:hover{
+    color: #1753A2;
+}
+
+.beranda__footer-socmed .instagram svg:hover * {
+    fill: url(#rg);
+}
+.beranda__footer-socmed .tiktok svg:hover{
+    color: #000;
+}
+.beranda__footer-socmed .youtube svg:hover{
+    color: #FF0000;
+}
+
+.beranda__footer-lottie {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.berita, .kontak, .pajak, .jmbako {
+    /* background-color: var(--blue); */
+    color: #000;
+}
+
+.berita__search-bar {
+    width: 500px;
+}
+
+.berita img {
+    height: 70%;
+}
+
+.beranda__image-card-pajak{
+    height: 70%;
+}
+
+.berita__nav:hover, .pajak__nav:hover, .jmbako__nav:hover {
+    color: orange !important;
+}
+
+.berita__title {
+    color: var(--blue);
+}
+
+.berita__title:hover {
+    color: var(--magenta);
+}
+
+/* admin */
+.admin__login-card {
+    background-color: var(--blue) !important;
+}
+
+.admin__login-button {
+    background-color: var(--magenta);
+}
+.admin__login-button:hover {
+    background-color: rgb(255, 113, 189);
+}
+.file-input--modifier {
+    height: unset;
+}
+
+.maintenance {
+    padding-top: 50px;
+}
+
+.page__maintenance {
+    width: 600px; 
+    height: 600px; 
+    object-fit:contain; 
+    margin-top:-120px;
+}
+
+/* Kontak */
+.kontak {
+    min-height: 90vh;
+}
+
+/* util classes */
+.bg-magenta {
+    background-color: var(--magenta) !important;
+}
+
+.bg-blue {
+    background-color: var(--blue) !important;
+}
+
+.btn-primary {
+    background-color: var(--magenta);
+    border: var(--magenta);
+}
+
+.btn-primary:hover {
+    background-color: var(--blue);
+}
+
+.btn-outline-primary {
+    border: 1px solid var(--magenta);
+    color: var(--magenta);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: white;
+}
+
+/* Responsive */
+@media (1200px > width >= 992px) {
+    .beranda__footer__ikuti-kami {
+        margin-top: 20px !important;
+    }
+}
+
+@media (width >= 992px) {
+    .beranda__card-berita--big h5{
+        font-size: 20px !important;
+    }
+    .beranda__card-berita--big .tanggal{
+        font-size: 16px !important;
+    }
+
+    /* admin */
+    .admin__login {
+        width: 300px !important;
+    }
+}
+
+@media (width <= 991px) {
+    .beranda__card-berita--big img {
+        height: 30vh !important;
+    }
+    /* .carousel-image {
+        height: 70vh;
+    } */
+}
+
+@media (width <= 765px) {
+    .beranda__footer-lottie {
+        display: none;
+    }
+
+    .berita__search-bar {
+        width: 100%;
+    }
+
+    .berita img {
+        height: auto;
+    }
+
+    .page__maintenance {
+        width: 500px; 
+        height: 500px;
+        margin-top:-100px; 
+    }
+}
+
+@media (width >765px) {
+    .pajak__list, .pajak__accordion {
+        width: 710px;
+    }
+}
+
+@media (width < 576px) {
+    /* .carousel-inner {
+        height: 30vh;
+    } */
+    /* .carousel-image {
+        height: 30vh;
+    } */
+}
